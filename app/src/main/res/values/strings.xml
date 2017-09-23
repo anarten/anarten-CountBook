@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">anarten-CountBook</string>
+    <string name="add">Add New Counter</string>
 </resources>
