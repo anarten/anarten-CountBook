@@ -1,5 +1,7 @@
 package com.example.anarten_countbook;
 
+import android.content.Intent;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -30,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //bodyText = (EditText) findViewById(R.id.body);
-        Button addButton = (Button) findViewById(R.id.addButton);
+        FloatingActionButton addButton = (FloatingActionButton) findViewById(R.id.addButton);
         //oldCountersList = (ListView) findViewById(R.id.oldCountersList);
 
 
@@ -41,6 +43,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void createCounter(View view) {
+        // do some
+        Intent intent = new Intent(this, CreateCounterActivity.class);
+        startActivity(intent);
     }
 
 }
