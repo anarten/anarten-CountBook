@@ -32,16 +32,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //bodyText = (EditText) findViewById(R.id.body);
-        FloatingActionButton addButton = (FloatingActionButton) findViewById(R.id.addButton);
         //oldCountersList = (ListView) findViewById(R.id.oldCountersList);
 
-
-        addButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                setResult(RESULT_OK);
-
-            }
-        });
 
     }
 
