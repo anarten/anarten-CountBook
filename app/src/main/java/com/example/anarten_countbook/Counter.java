@@ -13,7 +13,7 @@ public class Counter {
     private int initialValue;
     private String comment;
 
-    public Counter (String name, int value, String comment) throws CounterValueNegativeException{
+    public Counter (String name, int value, String comment) {
         this.name = name;
         this.date = new Date();
         this.setInitialValue(value);
@@ -21,14 +21,12 @@ public class Counter {
         this.comment = comment;
     }
 
-    public void setCurrentValue (int value) throws CounterValueNegativeException {
-        if (value < 0) {throw new CounterValueNegativeException();}
-        else {this.currentValue = value;}
+    public void setCurrentValue (int value) {
+        this.currentValue = value;
     }
 
-    private void setInitialValue (int value) throws CounterValueNegativeException {
-        if (value < 0) {throw new CounterValueNegativeException();}
-        else {this.initialValue = value;}
+    private void setInitialValue (int value) {
+        this.initialValue = value;
     }
 
     public int getCurrentValue() {
@@ -53,5 +51,9 @@ public class Counter {
 
     public void setComment(String comment) {
         this.comment = comment;
+    }
+
+    public String toString() {
+        return date.toString() + " | " + name + " | Current Value: " + Integer.toString(currentValue) + " | Initial Value: " + Integer.toString(initialValue) + " | " + comment;
     }
 }
