@@ -28,6 +28,7 @@ public class ViewCounterActivity extends AppCompatActivity {
     public static final String FILENAME = "file.sav";
     private ArrayList<Counter> counters = new ArrayList<Counter>();
     private Counter c;
+    private int position;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +38,7 @@ public class ViewCounterActivity extends AppCompatActivity {
         loadFromFile();
 
         Intent intent = getIntent();
-        final int position = intent.getIntExtra("position", 0);
+        position = intent.getIntExtra("position", 0);
 
         c = counters.get(position);
 
@@ -106,12 +107,20 @@ public class ViewCounterActivity extends AppCompatActivity {
         super.onStart();
         loadFromFile();
 
+        c = counters.get(position);
+
         TextView textView = (TextView) findViewById(R.id.counterTitle);
         textView.setText(c.getName());
         textView = (TextView) findViewById(R.id.initialValue);
         textView.setText(Integer.toString(c.getInitialValue()));
         textView = (TextView) findViewById(R.id.currentValue);
         textView.setText(Integer.toString(c.getCurrentValue()));
+    }
+
+    public void editCounter(View view) {
+        Intent intent = new Intent(this, EditCounterActivity.class);
+        intent.putExtra("position", position);
+        startActivity(intent);
     }
 
     private void loadFromFile() {

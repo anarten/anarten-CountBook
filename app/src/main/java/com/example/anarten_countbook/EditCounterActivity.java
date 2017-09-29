@@ -23,25 +23,37 @@ import java.io.OutputStreamWriter;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 
-public class CreateCounterActivity extends AppCompatActivity {
+public class EditCounterActivity extends AppCompatActivity {
 
     public static final String FILENAME = "file.sav";
     private ArrayList<Counter> counters = new ArrayList<Counter>();
+    private Counter c;
+    private int position;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_create_counter);
+        setContentView(R.layout.activity_edit_counter);
 
         Intent intent = getIntent();
+        position = intent.getIntExtra("position", 0);
         loadFromFile();
+        c = counters.get(position);
 
-        final EditText nameText = (EditText) findViewById(R.id.nameText);
-        final EditText initialValueText = (EditText) findViewById(R.id.initialValueText);
-        final EditText commentText = (EditText) findViewById(R.id.commentText);
+        final EditText nameText = (EditText) findViewById(R.id.editName);
+        final EditText initialValueText = (EditText) findViewById(R.id.editIV);
+        final EditText currentValueText = (EditText) findViewById(R.id.editCV);
+        final EditText commentText = (EditText) findViewById(R.id.editComment);
 
-        final Button createButton = (Button) findViewById(R.id.create);
-        createButton.setEnabled(false);
+        nameText.setText(c.getName());
+        initialValueText.setText(Integer.toString(c.getInitialValue()));
+        currentValueText.setText(Integer.toString(c.getCurrentValue()));
+        commentText.setText(c.getComment());
+
+
+        final Button updateButton = (Button) findViewById(R.id.updateButton);
+        updateButton.setEnabled(true);
+
 
         nameText.addTextChangedListener(new TextWatcher() {
             @Override
@@ -50,10 +62,10 @@ public class CreateCounterActivity extends AppCompatActivity {
             }
 
             private void checkInputs() {
-                if ( (!nameText.getText().toString().trim().equals("")) && ( !initialValueText.getText().toString().trim().equals("") ) ) {
-                    createButton.setEnabled(true);
+                if ( (!nameText.getText().toString().trim().equals("")) && ( !initialValueText.getText().toString().trim().equals("") ) && (!currentValueText.getText().toString().trim().equals("")) ) {
+                    updateButton.setEnabled(true);
                 } else {
-                    createButton.setEnabled(false);
+                    updateButton.setEnabled(false);
                 }
             }
 
@@ -74,10 +86,10 @@ public class CreateCounterActivity extends AppCompatActivity {
             }
 
             private void checkInputs() {
-                if ( (!nameText.getText().toString().trim().equals("")) && ( !initialValueText.getText().toString().trim().equals("") ) ) {
-                    createButton.setEnabled(true);
+                if ( (!nameText.getText().toString().trim().equals("")) && ( !initialValueText.getText().toString().trim().equals("") ) && (!currentValueText.getText().toString().trim().equals("")) ) {
+                    updateButton.setEnabled(true);
                 } else {
-                    createButton.setEnabled(false);
+                    updateButton.setEnabled(false);
                 }
             }
 
@@ -91,15 +103,46 @@ public class CreateCounterActivity extends AppCompatActivity {
             }
         });
 
-        createButton.setOnClickListener(new View.OnClickListener() {
+        currentValueText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                checkInputs();
+            }
+
+            private void checkInputs() {
+                if ( (!nameText.getText().toString().trim().equals("")) && ( !initialValueText.getText().toString().trim().equals("") ) && (!currentValueText.getText().toString().trim().equals("")) ) {
+                    updateButton.setEnabled(true);
+                } else {
+                    updateButton.setEnabled(false);
+                }
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                checkInputs();
+            }
+            @Override
+            public void afterTextChanged(Editable s) {
+                checkInputs();
+            }
+        });
+
+        updateButton.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View v) {
                 setResult(RESULT_OK);
 
                 String name = nameText.getText().toString();
                 int initialValue = Integer.parseInt(initialValueText.getText().toString());
+                int currentValue = Integer.parseInt(currentValueText.getText().toString());
                 String comment = commentText.getText().toString();
 
-                counters.add(new Counter(name, initialValue, comment));
+                c.setName(name);
+                c.setInitialValue(initialValue);
+                c.setCurrentValue(currentValue);
+                c.setComment(comment);
+
+                counters.set(position, c);
                 saveInFile();
                 finish();
             }
@@ -140,4 +183,5 @@ public class CreateCounterActivity extends AppCompatActivity {
             throw new RuntimeException();
         }
     }
+
 }

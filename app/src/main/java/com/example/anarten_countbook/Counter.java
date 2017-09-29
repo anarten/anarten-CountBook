@@ -25,7 +25,7 @@ public class Counter {
         this.currentValue = value;
     }
 
-    private void setInitialValue (int value) {
+    public void setInitialValue (int value) {
         this.initialValue = value;
     }
 
@@ -35,6 +35,10 @@ public class Counter {
 
     public int getInitialValue() {
         return initialValue;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getName() {

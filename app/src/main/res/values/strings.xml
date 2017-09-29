@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">anarten-CountBook</string>
+    <string name="nameField">Counter Name</string>
+    <string name="initialValueField">Initial Value</string>
+    <string name="currentValueField">Current Value</string>
+    <string name="commentField">Comment</string>
 </resources>
