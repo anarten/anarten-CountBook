@@ -1,0 +1,113 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml:2:1-42:12
+	package
+		ADDED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml:3:5-44
+		INJECTED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml
+application
+ADDED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml:5:5-40:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Adam\.android\build-cache\98bf6d25459d69365237c576e0b0b0c4b45dcea2\output\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:design:25.3.1] C:\Users\Adam\.android\build-cache\4b2cc7e9f0bcc400bc7081062db5904979f179c7\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Adam\.android\build-cache\1dcaf324ed2193e2fc71516237743019ef59ed19\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Adam\.android\build-cache\22f8c4c18e72f5ee314f4d1ff4bd61439cf28ba2\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Adam\.android\build-cache\a3d98f16eb7ba1f2b5e93447bdbaa8e790c0b6f4\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Adam\.android\build-cache\8f73a65618609a5c63a87d50a7bd41f318fa9b51\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Adam\.android\build-cache\90ea1b7922229c5d55943e69d580c2a0b3ab160c\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Adam\.android\build-cache\e0d4453bba7a5130cd69fb71ba51aafafa695238\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Adam\.android\build-cache\4b29b0c03730c3d34ddb87053dc884c5b48b07c6\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Adam\.android\build-cache\17ec37e2bb5b954ff20f18c41f6460f620596093\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Adam\.android\build-cache\8b65d644c4cbfa09084c81095f2f04db5cd7125b\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Adam\.android\build-cache\8591419f4a4330505c8dfacb8d58d33e32e2593d\output\AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml:8:9-41
+	android:supportsRtl
+		ADDED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml:10:9-35
+	android:roundIcon
+		ADDED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml:9:9-54
+	android:allowBackup
+		ADDED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml:6:9-35
+	android:icon
+		ADDED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml:7:9-43
+	android:theme
+		ADDED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml:11:9-40
+activity#com.example.anarten_countbook.MainActivity
+ADDED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml:12:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml:16:27-74
+activity#com.example.anarten_countbook.CreateCounterActivity
+ADDED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml:19:9-25:20
+	android:name
+		ADDED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml:19:19-56
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml:22:13-24:49
+	android:value
+		ADDED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml:24:17-46
+	android:name
+		ADDED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml:23:17-63
+activity#com.example.anarten_countbook.ViewCounterActivity
+ADDED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml:26:9-32:20
+	android:name
+		ADDED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml:26:19-54
+activity#com.example.anarten_countbook.EditCounterActivity
+ADDED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml:33:9-39:20
+	android:name
+		ADDED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml:33:19-54
+uses-sdk
+INJECTED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Adam\.android\build-cache\98bf6d25459d69365237c576e0b0b0c4b45dcea2\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:design:25.3.1] C:\Users\Adam\.android\build-cache\4b2cc7e9f0bcc400bc7081062db5904979f179c7\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Adam\.android\build-cache\1dcaf324ed2193e2fc71516237743019ef59ed19\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Adam\.android\build-cache\22f8c4c18e72f5ee314f4d1ff4bd61439cf28ba2\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Adam\.android\build-cache\a3d98f16eb7ba1f2b5e93447bdbaa8e790c0b6f4\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Adam\.android\build-cache\445937dd55ce763fc26838a92db6ea7e39abaf9c\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Adam\.android\build-cache\8f73a65618609a5c63a87d50a7bd41f318fa9b51\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Adam\.android\build-cache\90ea1b7922229c5d55943e69d580c2a0b3ab160c\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Adam\.android\build-cache\e0d4453bba7a5130cd69fb71ba51aafafa695238\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Adam\.android\build-cache\4b29b0c03730c3d34ddb87053dc884c5b48b07c6\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Adam\.android\build-cache\17ec37e2bb5b954ff20f18c41f6460f620596093\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Adam\.android\build-cache\8b65d644c4cbfa09084c81095f2f04db5cd7125b\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Adam\.android\build-cache\8591419f4a4330505c8dfacb8d58d33e32e2593d\output\AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.3.1] C:\Users\Adam\.android\build-cache\4b2cc7e9f0bcc400bc7081062db5904979f179c7\output\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Adam\AndroidStudioProjects\anarten-CountBook\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:25.3.1] C:\Users\Adam\.android\build-cache\4b2cc7e9f0bcc400bc7081062db5904979f179c7\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Adam\.android\build-cache\1dcaf324ed2193e2fc71516237743019ef59ed19\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Adam\.android\build-cache\22f8c4c18e72f5ee314f4d1ff4bd61439cf28ba2\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Adam\.android\build-cache\a3d98f16eb7ba1f2b5e93447bdbaa8e790c0b6f4\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Adam\.android\build-cache\445937dd55ce763fc26838a92db6ea7e39abaf9c\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Adam\.android\build-cache\8f73a65618609a5c63a87d50a7bd41f318fa9b51\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Adam\.android\build-cache\90ea1b7922229c5d55943e69d580c2a0b3ab160c\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Adam\.android\build-cache\e0d4453bba7a5130cd69fb71ba51aafafa695238\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Adam\.android\build-cache\4b29b0c03730c3d34ddb87053dc884c5b48b07c6\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Adam\.android\build-cache\17ec37e2bb5b954ff20f18c41f6460f620596093\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Adam\.android\build-cache\8b65d644c4cbfa09084c81095f2f04db5cd7125b\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Adam\.android\build-cache\8591419f4a4330505c8dfacb8d58d33e32e2593d\output\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:design:25.3.1] C:\Users\Adam\.android\build-cache\4b2cc7e9f0bcc400bc7081062db5904979f179c7\output\AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:design:25.3.1] C:\Users\Adam\.android\build-cache\4b2cc7e9f0bcc400bc7081062db5904979f179c7\output\AndroidManifest.xml:26:9-47
