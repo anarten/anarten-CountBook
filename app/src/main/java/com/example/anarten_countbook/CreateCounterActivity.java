@@ -1,3 +1,14 @@
+/*
+ *  Class Name: CreateCounterActivity
+ *
+ *  Version: 1.0
+ *
+ *  Date: September 30, 2017
+ *
+ *  Copyright (c) 2017 Adam Narten, CMPUT301, University of Alberta - All Rights Reserverd. You may use, distribute, or modify this code under terms and conditions of the Code of Students Behavior at the University of Alberta
+ *
+ */
+
 package com.example.anarten_countbook;
 
 import android.content.Context;
@@ -23,11 +34,25 @@ import java.io.OutputStreamWriter;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 
+/**
+ * Represents the activity to create counters for the anarten-CountBook app
+ *
+ * @author anarten
+ * @version 1.0
+ * @see MainActivity
+ * @see ViewCounterActivity
+ * @see Counter
+ * @since 1.0
+ */
 public class CreateCounterActivity extends AppCompatActivity {
 
     public static final String FILENAME = "file.sav";
     private ArrayList<Counter> counters = new ArrayList<Counter>();
 
+    /**
+     * OnCreate function that runs the first time the activity is loaded
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +68,10 @@ public class CreateCounterActivity extends AppCompatActivity {
         final Button createButton = (Button) findViewById(R.id.create);
         createButton.setEnabled(false);
 
+        /**
+         * TextChangedListeners created with reference to:
+         * https://stackoverflow.com/questions/22680106/how-to-disable-button-if-edittext-is-empty
+         */
         nameText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -67,6 +96,10 @@ public class CreateCounterActivity extends AppCompatActivity {
             }
         });
 
+        /**
+         * TextChangedListeners created with reference to:
+         * https://stackoverflow.com/questions/22680106/how-to-disable-button-if-edittext-is-empty
+         */
         initialValueText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -106,6 +139,10 @@ public class CreateCounterActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * Loads the necessary files from the device
+     * Taken from lonelytwitter lab exercises
+     */
     private void loadFromFile() {
         try {
             FileInputStream fis = openFileInput(FILENAME);
@@ -123,6 +160,10 @@ public class CreateCounterActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Saves the necessary files to the device
+     * Taken from lonelytwitter lab exercises
+     */
     private void saveInFile() {
         try {
             FileOutputStream fos = openFileOutput(FILENAME,

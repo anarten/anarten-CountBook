@@ -1,3 +1,14 @@
+/*
+ *  Class Name: ViewCounterActivity
+ *
+ *  Version: 1.0
+ *
+ *  Date: September 30, 2017
+ *
+ *  Copyright (c) 2017 Adam Narten, CMPUT301, University of Alberta - All Rights Reserverd. You may use, distribute, or modify this code under terms and conditions of the Code of Students Behavior at the University of Alberta
+ *
+ */
+
 package com.example.anarten_countbook;
 
 import android.content.Context;
@@ -23,6 +34,16 @@ import java.io.OutputStreamWriter;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 
+/**
+ * Represents the activity to view counter details for the anarten-CountBook app
+ *
+ * @author anarten
+ * @version 1.0
+ * @see EditCounterActivity
+ * @see MainActivity
+ * @see Counter
+ * @since 1.0
+ */
 public class ViewCounterActivity extends AppCompatActivity {
 
     public static final String FILENAME = "file.sav";
@@ -30,6 +51,10 @@ public class ViewCounterActivity extends AppCompatActivity {
     private Counter c;
     private int position;
 
+    /**
+     * OnCreate function that runs the first time the activity is loaded
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -107,6 +132,9 @@ public class ViewCounterActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * OnStart function that runs every time the activity is loaded
+     */
     @Override
     protected void onStart() {
         // TODO Auto-generated method stub
@@ -127,12 +155,20 @@ public class ViewCounterActivity extends AppCompatActivity {
         textView.setText(c.getComment());
     }
 
+    /**
+     * editCounter function passes intent to EditCounterActivity
+     * @param view
+     */
     public void editCounter(View view) {
         Intent intent = new Intent(this, EditCounterActivity.class);
         intent.putExtra("position", position);
         startActivity(intent);
     }
 
+    /**
+     * Loads the necessary files from the device
+     * Taken from lonelytwitter lab exercises
+     */
     private void loadFromFile() {
         try {
             FileInputStream fis = openFileInput(FILENAME);
@@ -150,6 +186,10 @@ public class ViewCounterActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Saves the necessary files to the device
+     * Taken from lonelytwitter lab exercises
+     */
     private void saveInFile() {
         try {
             FileOutputStream fos = openFileOutput(FILENAME,
