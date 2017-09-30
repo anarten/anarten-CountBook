@@ -69,6 +69,8 @@ public class ViewCounterActivity extends AppCompatActivity {
                 counters.set(position,c);
                 TextView textView = (TextView) findViewById(R.id.currentValue);
                 textView.setText(Integer.toString(c.getCurrentValue()));
+                textView = (TextView) findViewById(R.id.dateView);
+                textView.setText("Updated: " + c.getDate());
                 saveInFile();
             }
         });
@@ -82,6 +84,8 @@ public class ViewCounterActivity extends AppCompatActivity {
                 counters.set(position,c);
                 TextView textView = (TextView) findViewById(R.id.currentValue);
                 textView.setText(Integer.toString(c.getCurrentValue()));
+                textView = (TextView) findViewById(R.id.dateView);
+                textView.setText("Updated: " + c.getDate());
                 saveInFile();
             }
         });
@@ -95,6 +99,8 @@ public class ViewCounterActivity extends AppCompatActivity {
                 counters.set(position,c);
                 TextView textView = (TextView) findViewById(R.id.currentValue);
                 textView.setText(Integer.toString(c.getCurrentValue()));
+                textView = (TextView) findViewById(R.id.dateView);
+                textView.setText("Updated: " + c.getDate());
                 saveInFile();
             }
         });
@@ -115,6 +121,10 @@ public class ViewCounterActivity extends AppCompatActivity {
         textView.setText(Integer.toString(c.getInitialValue()));
         textView = (TextView) findViewById(R.id.currentValue);
         textView.setText(Integer.toString(c.getCurrentValue()));
+        textView = (TextView) findViewById(R.id.dateView);
+        textView.setText("Updated: " + c.getDate());
+        textView = (TextView) findViewById(R.id.commentView);
+        textView.setText(c.getComment());
     }
 
     public void editCounter(View view) {
