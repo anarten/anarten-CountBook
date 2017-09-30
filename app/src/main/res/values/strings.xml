@@ -3,5 +3,5 @@
     <string name="nameField">Counter Name</string>
     <string name="initialValueField">Initial Value</string>
     <string name="currentValueField">Current Value</string>
-    <string name="commentField">Comment</string>
+    <string name="commentField">Comment (Optional)</string>
 </resources>

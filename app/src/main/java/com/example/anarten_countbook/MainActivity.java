@@ -12,6 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -64,6 +65,9 @@ public class MainActivity extends AppCompatActivity {
         loadFromFile();
         adapter = new ArrayAdapter<Counter>(this,android.R.layout.simple_list_item_1, counters);
         countersList.setAdapter(adapter);
+
+        TextView title = (TextView) findViewById(R.id.counterListTitle);
+        title.setText("Counter List - " + counters.size() + " Counters");
     }
 
     public void createCounter(View view) {
