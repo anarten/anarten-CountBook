@@ -1,7 +1,4 @@
-#Sat Sep 30 18:32:04 MDT 2017
-base.0=C\:\\Users\\Adam\\AndroidStudioProjects\\anarten-CountBook\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_37ba7e3d8aba9288cc47685122be0238ae644b68
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=C\:\\Users\\Adam\\AndroidStudioProjects\\anarten-CountBook\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_92f5e451c5d37d617cbd70a5decf1f486170e078\\classes.dex
-base.1=C\:\\Users\\Adam\\AndroidStudioProjects\\anarten-CountBook\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_92f5e451c5d37d617cbd70a5decf1f486170e078
-file.0=C\:\\Users\\Adam\\AndroidStudioProjects\\anarten-CountBook\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_37ba7e3d8aba9288cc47685122be0238ae644b68\\classes.dex
+#Sun Oct 01 13:54:36 MDT 2017
+base.0=C\:\\Users\\Adam\\AndroidStudioProjects\\anarten-CountBook\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+renamed.0=classes.dex
+file.0=C\:\\Users\\Adam\\AndroidStudioProjects\\anarten-CountBook\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
